@@ -7,4 +7,5 @@ before_install:
   - curl -sSL https://cli.openfaas.com | sudo sh
 
 script:
-  - faas-cli
+  - faas-cli build -f github-stats.yml
+  - faas-cli push -f github-stats.yml

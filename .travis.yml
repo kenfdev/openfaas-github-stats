@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - curl -sSL https://cli.openfaas.com | sudo sh
+
+script:
+  - faas-cli
